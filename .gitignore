@@ -1,0 +1,71 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Logs and temporary files
+*.log
+tmp*/
+tmp_*/
+
+# Generated arrays, previews, image exports, and archives
+*.npy
+*.npz
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+*.zip
+
+# External/omitted DeVigNet dependency and related runners
+DeVigNet/
+run_devignet_*_benchmark.py
+run_final_test_group_chain_benchmark.py
+
+# Small experiment result/config dumps kept local for now
+*_eval.json
+*_compare*.csv
+*_compare*.json
+*_progress.json
+harder_seed_scan.json
+maskingV1.2_*.json
+maskingV1.3_*.json
+realistic_compare_*.json
+side_by_side_*.json
+sweep_vfit_*.csv
+sweep_vfit_*.json
+traditional_*.json
+
+# Generated experiment/output folders
+*_outputs/
+*_benchmarks/
+devignet_fourblend_outputs/
+devignet_single_outputs/
+fallout_artifacts_exports/
+harder_jpeg_exports/
+maskingV1.3_nominal55_rerun_3316_3319/
+maskingV13_cpu_benchmark/
+maskingV13_epoch_compare/
+maskingV132_cpu_fast_twostage_85*/
+maskingV14_*/
+multiframe_cos4_simple_benchmarks/
+real_benchmark_outputs*/
+real_benchmark_smoke/
+single_3319_simple_experiments/
+single_frame_simple_benchmarks/
+synthetic_batch10_gpu/
+synthetic_output*/
+synthetic_realistic_*/
+test images/
+tmp_test_group*/
+vignette_aberration_Final_Test_Group*/
+vignette_aberration_debug*/
+vignette_aberration_preview*/
+vignette_aberration_smoke/
+vmap_quality_comparison/
