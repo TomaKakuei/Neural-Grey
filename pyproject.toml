@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neural-grey"
+version = "2026.10.17"
+description = "Practical vignetting calibration from four casual camera rolls"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "torch>=2.5,<3", "opencv-python-headless>=4.8,<6"]
+
+[project.optional-dependencies]
+raw = ["rawpy>=0.19,<1"]
+
+[project.urls]
+Repository = "https://github.com/TomaKakuei/Neural-Grey"
+
+[project.scripts]
+neural-grey = "neural_grey.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
