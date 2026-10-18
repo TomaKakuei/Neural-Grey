@@ -2,6 +2,8 @@
 
 **Practical Vignetting Calibration from Casual Camera Rolls**
 
+[![Calibration and training](https://github.com/TomaKakuei/Neural-Grey/actions/workflows/tests.yml/badge.svg)](https://github.com/TomaKakuei/Neural-Grey/actions/workflows/tests.yml)
+
 Neural Grey estimates a **reusable camera–lens shading map from four approximate
 roll captures of a static, light-colored surface**. Rolling the camera moves wall
 illumination across the sensor while lens shading stays fixed. The method fits
@@ -102,10 +104,12 @@ The manuscript reports the following shading-map PSNR means:
 | Evaluation | Reported PSNR |
 | --- | --- |
 | 100 synthetic cases | 25.43 dB |
-| Ray-traced lens architectures | 24.49 dB |
+| 12 ray-traced lens architectures | 24.49 dB (finite-value mean) |
 | 21 real takes across 7 optical configurations | 25.38 dB |
 
 These are existing manuscript results, not measurements from the short demo.
+The ray-traced PSNR mean uses 11 finite values; the remaining zero-error case
+has infinite PSNR.
 The [method notes](docs/METHOD.md) explain the representation, radial ambiguity,
 release scope and practical limits. Full experimental datasets and local research
 records are not bundled with this code release.
